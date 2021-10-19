@@ -2,6 +2,7 @@
 
 Random scripts to do various things with BDSMLR due to the fact that they have no easily accessible API. Use at your own discretion.
 
-## requirements
+## usage
 
-Python 3. Install the requirements.txt before use.
+1. Install requirements, `pip install -r requirements.txt`.
+2. Run any of the scripts with your python 3.x interpreter.
