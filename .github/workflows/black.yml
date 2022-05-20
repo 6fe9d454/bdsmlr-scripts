@@ -19,4 +19,4 @@ jobs:
         pip install black
     - name: Analysing the code with black
       run: |
-        black `ls -R|grep .py$|xargs`
+        black --verbose `ls -R|grep .py$|xargs`
