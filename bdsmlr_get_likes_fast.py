@@ -1,3 +1,15 @@
+"""
+Pull liked images from your liked posts. Reuses logic from the blogs fetch. I'm
+not sure how it behaves with video posts, so don't assume it will work properly
+with videos. Outputs the contents to a file for use with another utility or
+bash. 
+
+For example, using aria2c: 
+
+    $ aria2c --input-file bdsmlr_likes.txt
+"""
+
+
 import argparse
 import random
 import time
@@ -98,7 +110,7 @@ def main(args):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawTextHelpFormatter)
     parser.add_argument("-u", "--username", required=True)
     parser.add_argument("-p", "--password", required=True)
     parser.add_argument("-s", "--start-page", type=int, default=1, help="end page")
