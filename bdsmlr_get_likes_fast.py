@@ -110,7 +110,9 @@ def main(args):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawTextHelpFormatter)
+    parser = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawTextHelpFormatter
+    )
     parser.add_argument("-u", "--username", required=True)
     parser.add_argument("-p", "--password", required=True)
     parser.add_argument("-s", "--start-page", type=int, default=1, help="end page")
