@@ -5,10 +5,11 @@ stopping at a max page limit, and/or image limit.
 """
 
 import argparse
-import time
 import random
-from lxml import html
+import time
+
 import requests
+from lxml import html
 
 
 def main(args):
